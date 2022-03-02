@@ -1,11 +1,6 @@
 #include "Insertion.h"
 #include "Quicksort.h"
 
-<<<<<<< HEAD
-int main(int argc, char** argv){
-	
-	Insertion i(argv[1]);
-=======
 
 int main(int argc, char** argv){
 	
@@ -13,6 +8,5 @@ int main(int argc, char** argv){
 	Quicksort q(argv[1]);
 	
 	return 0;
->>>>>>> insertion
 
 }
