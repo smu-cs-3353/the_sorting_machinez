@@ -15,8 +15,7 @@ class Insertion{
 public:
 
 	Insertion(string);
-	void insertion(int[], int);
-	
+	void insertion(int[], int);	
 	
 		
 };
