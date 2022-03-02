@@ -14,8 +14,9 @@ class Insertion{
 	
 public:
 
-	Insertion(string);
-	void insertion(int[], int);	
+	Insertion(string int_directory, string string_directory);
+	void int_insertion(int[] arrayy, int size);
+	void string_insertion(int[] arrayy, int size);
 	
 		
 };

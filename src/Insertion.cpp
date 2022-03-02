@@ -1,6 +1,6 @@
 #include "Insertion.h"
 
-Insertion::Insertion(string directory){
+Insertion::Insertion(string int_directory){
 	
 		ifstream filee(directory);
 		
