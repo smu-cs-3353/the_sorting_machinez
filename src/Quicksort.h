@@ -3,6 +3,8 @@
 
 #include <iostream>
 #include <string>
+#include <stdlib.h> //rand()
+#include <algorithm> //swap()
 
 #include "Sort.h"
 
@@ -13,8 +15,11 @@ class Quicksort : public Sort
 
 
 public:
-	void sort(string);
-	//override
+	Quicksort(string); 	
+	void quicksorter1(string, string);
+	int partition1(string, string);
+
+
 };
 
 #endif

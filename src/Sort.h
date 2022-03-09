@@ -11,8 +11,15 @@ protected:
     vector<string> input_vector;
     
 public:
-    virtual void sort(string directory)
+    // virtual void sort(string directory)
+
+    /*
+    base class constructor: process file input -> input_vector
+    */
+    Sort(string directory)
     {
+        cout << "--------called base class----------" << endl;
+        
         ifstream filee(directory);
 
         if (!filee.is_open())
@@ -20,21 +27,14 @@ public:
 
         string temp;
 
-        cout << "hi" << endl;
-
         while (!filee.eof())
         {
             filee >> temp;
             input_vector.push_back(temp);
         }
-
-        for (string s : input_vector)
-            cout << s << endl;
     }
 
-    vector<string> get_input(){
-        return input_vector;
-    }
+
 };
 
 #endif
