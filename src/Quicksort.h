@@ -3,8 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <stdlib.h> //rand()
-#include <algorithm> //swap()
+
 
 #include "Sort.h"
 
@@ -15,6 +14,10 @@ class Quicksort : public Sort
 
 
 public:
+	/*
+	Quicksort constructor: 
+	base class(Sort) constructor is called to process input file,
+	*/
 	Quicksort(string); 	
 	void quicksorter(int, int);
 	int partition(int, int);

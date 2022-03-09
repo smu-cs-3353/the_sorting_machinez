@@ -2,6 +2,7 @@
 #define SORT_H__
 #include <vector>
 #include <fstream>
+#include <stdlib.h> //rand()
 
 using namespace std;
 
@@ -11,8 +12,6 @@ protected:
     vector<string> input_vector;
     
 public:
-    // virtual void sort(string directory)
-
     /*
     base class constructor: process file input -> input_vector
     */
@@ -34,6 +33,7 @@ public:
         }
     }
 
+    // virtual void sort(string directory)
 
 };
 

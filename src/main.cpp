@@ -7,10 +7,11 @@ int main(int argc, char** argv){
 	
 	string file = argv[1];
 
-	Sort *quicksort = new Quicksort(file);
-	//quicksort->sort(argv[1]);
+	Sort *quicksorter = new Quicksort(file);
+	delete quicksorter;
 
-	delete quicksort;
+	Sort *insertioner = new Insertion(file);
+	delete insertioner;
 
 	return 0;
 
