@@ -9,7 +9,7 @@ Quicksort::Quicksort(string directory) : Sort(directory)
     for (string s : input_vector)
         cout << s << endl;
 
-    quicksorter1(left, right);
+    quicksorter(left, right);
 
     cout << "done" << endl;
     for (string s : input_vector)
@@ -17,21 +17,22 @@ Quicksort::Quicksort(string directory) : Sort(directory)
 }
 
 /*
-quicksorter1:
+quicksorter:
 chooses random pivot, then swaps pivot with the rightmost element
 maintain a window of elements that consists of elements < pivot element;
+partition left and right recursively until left index crosses the right index
 */
-void Quicksort::quicksorter1(int left, int right)
+void Quicksort::quicksorter(int left, int right)
 {
     if (left < right)
     {
-        int pivot = partition1(left, right);
-        quicksorter1(left, pivot - 1);
-        quicksorter1(pivot + 1, right);
+        int pivot = partition(left, right);
+        quicksorter(left, pivot - 1);
+        quicksorter(pivot + 1, right);
     }
 }
 
-int Quicksort::partition1(int left, int right)
+int Quicksort::partition(int left, int right)
 {
     // generate random pivot, then swap it with last element
     int random = left + (rand() % (right - left + 1));
