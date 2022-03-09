@@ -16,8 +16,8 @@ class Quicksort : public Sort
 
 public:
 	Quicksort(string); 	
-	void quicksorter1(string, string);
-	int partition1(string, string);
+	void quicksorter1(int, int);
+	int partition1(int, int);
 
 
 };
