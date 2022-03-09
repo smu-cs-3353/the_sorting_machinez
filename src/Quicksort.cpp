@@ -1,10 +1,13 @@
 #include "Quicksort.h"
 
-Quicksort::Quicksort(string int_directory, string string_directory){
-	
+void Quicksort::sort(string string_directory){
+    Sort.sort();
+    vector<string> input_vector = get_input();
 
-}
-Quicksort::int_quicksort(int[] arrayy, int size){
-	
-	
+    cout << "inside quicksort" << input_vector.size() << endl;
+
+
+    for(string s : input_vector)
+        cout << s << endl;
+
 }

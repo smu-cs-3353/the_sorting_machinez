@@ -4,16 +4,17 @@
 #include <iostream>
 #include <string>
 
+#include "Sort.h"
+
 using namespace std;
 
-class Quicksort{
-	
+class Quicksort : public Sort
+{
+
+
 public:
-	Quicksort(string);
-	quicksort();
-	
-	
-	
-}
+	void sort(string);
+	//override
+};
 
 #endif
