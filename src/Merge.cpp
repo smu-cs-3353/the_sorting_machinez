@@ -8,7 +8,7 @@ Merge::Merge(string directory) : Sort(directory)
 
     int left = 0;
     int right = input_vector.size() - 1;
-    merger(left, right);
+   // merger(left, right);
 
     cout << "-----merge done-----" << endl;
     for (string s : input_vector) //test print
@@ -24,7 +24,6 @@ void Merge::merger(int left, int right)
 
     if (left < right)
     {
-
         int middle = left + (right - left) / 2;
         merger(left, middle);
         merger(middle + 1, right);

@@ -11,6 +11,6 @@ public:
     Merge(string);
     void merger(int, int);
     void merge(int, int, int);
-}
+};
 
 #endif
