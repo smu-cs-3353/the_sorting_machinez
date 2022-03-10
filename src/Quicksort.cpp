@@ -3,7 +3,7 @@
 Quicksort::Quicksort(string directory) : Sort(directory)
 {
     cout << "-----quicksort!-----" << endl;
-    for (string s : input_vector) //test print
+    for (int s : input_vector) //test print
         cout << s << endl;
 
     int left = 0;
@@ -12,7 +12,7 @@ Quicksort::Quicksort(string directory) : Sort(directory)
     quicksorter(left, right);
 
     cout << "-----quicksort done-----" << endl;
-    for (string s : input_vector)  //test print
+    for (int s : input_vector)  //test print
         cout << s << endl;
 }
 
@@ -39,7 +39,7 @@ int Quicksort::partition(int left, int right)
     swap(input_vector.at(random), input_vector.at(right));
 
     // pivot element = rightmost element
-    string pivot = input_vector[right];
+    int pivot = input_vector[right];
 
     // maintain window of elements < pivot element
     int i = left - 1;

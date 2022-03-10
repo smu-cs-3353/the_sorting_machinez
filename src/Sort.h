@@ -10,7 +10,7 @@ using namespace std;
 class Sort
 {
 protected:
-    vector<string> input_vector;
+    vector<int> input_vector;
 
 public:
     /*
@@ -25,7 +25,7 @@ public:
         if (!filee.is_open())
             cout << "input file can't open" << endl;
 
-        string temp;
+        int temp;
 
         while (!filee.eof())
         {

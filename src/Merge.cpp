@@ -3,15 +3,15 @@
 Merge::Merge(string directory) : Sort(directory)
 {
     cout << "-----merger!-----" << endl;
-    for (string s : input_vector) //test print
+    for (int s : input_vector) // test print
         cout << s << endl;
 
     int left = 0;
     int right = input_vector.size() - 1;
-   // merger(left, right);
+    merger(left, right);
 
     cout << "-----merge done-----" << endl;
-    for (string s : input_vector) //test print
+    for (int s : input_vector) // test print
         cout << s << endl;
 }
 
@@ -42,8 +42,8 @@ void Merge::merge(int left, int middle, int right)
     int a_length = middle - left + 1;
     int b_length = right - middle;
 
-    string arr_a[a_length];
-    string arr_b[b_length];
+    int arr_a[a_length];
+    int arr_b[b_length];
 
     for (int i = 0; i < a_length; i++)
         arr_a[i] = input_vector.at(left + i);
@@ -52,33 +52,18 @@ void Merge::merge(int left, int middle, int right)
         arr_b[i] = input_vector.at(middle + 1 + i);
 
     // a is count for arr_a, b for arr_b, result for input_vector
-    int a = 0, b = 0, result = 0;
+    int a = 0, b = 0, result = left;
+    
     while (a < a_length && b < b_length)
     {
-
-        if (arr_a[a] < arr_b[b])
-        {
-            input_vector.at(result) = arr_a[a];
-            a++;
-            result++;
-        }
+        if (arr_a[a] <= arr_b[b])
+            input_vector.at(result++) = arr_a[a++];
         else
-        {
-            input_vector.at(result) = arr_b[b];
-            b++;
-            result++;
-        }
+            input_vector.at(result++) = arr_b[b++];
     }
     while (a < a_length)
-    {
-        input_vector.at(result) = arr_a[a];
-        a++;
-        result++;
-    }
+        input_vector.at(result++) = arr_a[a++];
+
     while (b < b_length)
-    {
-        input_vector.at(result) = arr_b[b];
-        b++;
-        result++;
-    }
+        input_vector.at(result++) = arr_b[b++];
 }

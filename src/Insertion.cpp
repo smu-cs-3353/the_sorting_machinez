@@ -3,13 +3,13 @@
 Insertion::Insertion(string directory) : Sort(directory)
 {
 	cout << "-----insertion sort!-----" << endl;
-	for (string s : input_vector) //test print
+	for (int s : input_vector) //test print
 		cout << s << endl;
 
 	insertioner();
 
 	cout << "-----insertion sort done-----" << endl;
-	for (string s : input_vector) //test print
+	for (int s : input_vector) //test print
 		cout << s << endl;
 }
 
@@ -26,7 +26,7 @@ void Insertion::insertioner()
 	for (int i = 1; i < size; i++)
 	{
 		// current element = element that will be shifted into right position
-		string current = input_vector.at(i);
+		int current = input_vector.at(i);
 		int j = i - 1;
 
 		while (j >= 0 && input_vector.at(j) > current)
