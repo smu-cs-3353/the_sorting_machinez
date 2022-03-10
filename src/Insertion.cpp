@@ -3,14 +3,13 @@
 Insertion::Insertion(string directory) : Sort(directory)
 {
 	cout << "-----insertion sort!-----" << endl;
-
-	for (string s : input_vector)
+	for (string s : input_vector) //test print
 		cout << s << endl;
 
 	insertioner();
 
 	cout << "-----insertion sort done-----" << endl;
-	for (string s : input_vector)
+	for (string s : input_vector) //test print
 		cout << s << endl;
 }
 

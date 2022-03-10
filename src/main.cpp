@@ -1,10 +1,11 @@
 #include "Insertion.h"
 #include "Quicksort.h"
 
-//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
+// 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
 
-int main(int argc, char** argv){
-	
+int main(int argc, char **argv)
+{
+
 	string file = argv[1];
 
 	Sort *quicksorter = new Quicksort(file);
@@ -14,5 +15,4 @@ int main(int argc, char** argv){
 	delete insertioner;
 
 	return 0;
-
 }
