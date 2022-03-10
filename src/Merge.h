@@ -7,7 +7,7 @@ class Merge : public Sort
 {
 
 public:
-    //constructor, merge_sort, and merge function
+    // constructor, merge_sort, and merge function
     Merge(string);
     void merger(int, int);
     void merge(int, int, int);

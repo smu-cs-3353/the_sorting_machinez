@@ -19,8 +19,8 @@ int main(int argc, char **argv)
 	Sort *merger = new Merge(file);
 	delete merger;
 
-	Sort *sheller = new Shellsort();
-	delete sheller;
+	Sort *shellsorter = new Shellsort(file);
+	delete shellsorter;
 
 	return 0;
 }
