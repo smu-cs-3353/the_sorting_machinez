@@ -1,5 +1,6 @@
 #ifndef SORT_H__
 #define SORT_H__
+#include <iostream>
 #include <vector>
 #include <fstream>
 #include <stdlib.h> //rand()
@@ -10,7 +11,7 @@ class Sort
 {
 protected:
     vector<string> input_vector;
-    
+
 public:
     /*
     base class constructor: process file input -> input_vector
@@ -18,7 +19,7 @@ public:
     Sort(string directory)
     {
         cout << "--------called base class----------" << endl;
-        
+
         ifstream filee(directory);
 
         if (!filee.is_open())
@@ -34,7 +35,6 @@ public:
     }
 
     // virtual void sort(string directory)
-
 };
 
 #endif

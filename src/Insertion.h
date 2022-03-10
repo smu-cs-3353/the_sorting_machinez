@@ -3,23 +3,14 @@
 #ifndef INSERTION_H__
 #define INSERTION_H__
 
-#include <iostream>
-#include <string>
-#include <fstream>
-#include <vector>
-
 #include "Sort.h"
 
-using namespace std;
+class Insertion : public Sort
+{
 
-class Insertion : public Sort{
-	
 public:
 	Insertion(string);
-	void insertioner();	
-	
-		
+	void insertioner();
 };
-
 
 #endif

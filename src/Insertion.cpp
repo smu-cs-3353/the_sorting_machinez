@@ -26,7 +26,7 @@ void Insertion::insertioner()
 
 	for (int i = 1; i < size; i++)
 	{
-		//current element = element that will be shifted into right position
+		// current element = element that will be shifted into right position
 		string current = input_vector.at(i);
 		int j = i - 1;
 

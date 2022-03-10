@@ -4,25 +4,18 @@
 #include <iostream>
 #include <string>
 
-
 #include "Sort.h"
-
-using namespace std;
 
 class Quicksort : public Sort
 {
-
-
 public:
 	/*
-	Quicksort constructor: 
+	Quicksort constructor:
 	base class(Sort) constructor is called to process input file,
 	*/
-	Quicksort(string); 	
+	Quicksort(string);
 	void quicksorter(int, int);
 	int partition(int, int);
-
-
 };
 
 #endif
