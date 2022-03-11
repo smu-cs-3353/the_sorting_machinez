@@ -11,6 +11,7 @@ class Sort
 {
 protected:
     vector<int> input_vector;
+    // vector<string> input_vector;
 
 public:
     /*
@@ -18,8 +19,6 @@ public:
     */
     Sort(string directory)
     {
-        cout << "--------called base class----------" << endl;
-
         ifstream filee(directory);
 
         if (!filee.is_open())
@@ -32,6 +31,7 @@ public:
             filee >> temp;
             input_vector.push_back(temp);
         }
+    
     }
 
     // virtual void sort(string directory)
