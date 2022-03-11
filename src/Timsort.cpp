@@ -41,7 +41,6 @@ void Timsort::timsorter()
             int left = i;
             int right = i + sub_size;
             int middle = left + (right - left) / 2;
-            cout << "here" << left << " " << middle << endl;
             merge(left, middle, right);
         }
         sub_size *= 2;
@@ -92,9 +91,9 @@ void Timsort::merge(int left, int middle, int right)
         else
             input_vector.at(result++) = arr_b[b++];
     }
-    //either arr_a or arr_b is finished first;
-    while(a < size_a)
+    // either arr_a or arr_b is finished first;
+    while (a < size_a)
         input_vector.at(result++) = arr_a[a++];
-    while(b < size_b)
+    while (b < size_b)
         input_vector.at(result++) = arr_b[b++];
 }
