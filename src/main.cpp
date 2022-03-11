@@ -23,8 +23,8 @@ int main(int argc, char **argv)
 	Sort *shellsorter = new Shellsort(file);
 	delete shellsorter;
 
-	// Sort *timsorter = new TimSort(file);
-	// delete timsorter;
+	Sort *timsorter = new Timsort(file);
+	delete timsorter;
 
 	return 0;
 }

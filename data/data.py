@@ -92,14 +92,14 @@ def write_to_file(arr, file_name):
     for num in arr:
         file.writelines(str(num) + "\n")
 #main
-sizes = {10, 100, 1000}
+sizes = {10, 100, 500, 1000, 5000, 10000}
 
 for s in sizes:
 
     arr = []
 
-    #type = "string"
-    type = "integer"
+    type = "string"
+    #type = "integer"
 
     arr = no_dupes(s, type)
     write_to_file(arr, type + "_data/no_dupes_" + str(s) + "_.txt")

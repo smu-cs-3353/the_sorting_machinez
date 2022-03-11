@@ -9,6 +9,7 @@ class Timsort : public Sort
     public:
     Timsort(string);
     void timsorter();
-    void insertion();
+    void insertion(int, int);
+    void merge(int, int, int);
 };
 #endif
