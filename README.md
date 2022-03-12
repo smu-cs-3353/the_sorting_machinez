@@ -34,7 +34,7 @@ project/build$ cmake --build .
 project/build$ ./project ../input_file.txt
 ```
 ### Sample Output
-![image](https://user-images.githubusercontent.com/89363825/158005586-6f18b716-171f-41a5-82fb-e76bb27ed5b9.png) | width=100)
+![image](https://user-images.githubusercontent.com/89363825/158005586-6f18b716-171f-41a5-82fb-e76bb27ed5b9.png) | =100x100)
 
 Output will contain time taken for each sorting algorithm.
 
