@@ -1,6 +1,6 @@
-#The Sorting Machinez
+# The Sorting Machinez
 
-##Project Statement
+## Project Statement
 Implement six sorting algorithms, and generate data to test its performance. The sorting algorithms are as follows:
 -insertion sort
 -randomized quicksort
@@ -9,7 +9,7 @@ Implement six sorting algorithms, and generate data to test its performance. The
 -introsort
 -timsort
 
-##Data
+## Data
 I generated five categories of data, and each category is done in six dataset sizes. The categories are as follows:
 -randomized dataset without duplicates
 -dataset without duplicates in ascending order
@@ -23,17 +23,17 @@ String data had little difference, only that the randomly generated numbers vari
 
 The python data generation script is located in the data folder of the repository.
 
-##Implementation, Build, Input/Output
+## Implementation, Build, Input/Output
 Data file input is read in through a command line argument, then the file directory is passed to the base class ```sort```, where file input is processed into an input vector. All subclasses(the different sorting algorithms) inherit from the ```sort``` class and have protected access to the input vector.
 
-###How to Build
+### How to Build
 Clone the repository, then navigate to the project build folder and build cmake. After the executable is created, run the executable.
 ```
 project/build$ cmake ..
 project/build$ cmake --build .
 project/build$ ./project ../input_file.txt
 ```
-###Sample Output
+### Sample Output
 ![image](https://user-images.githubusercontent.com/89363825/158005586-6f18b716-171f-41a5-82fb-e76bb27ed5b9.png)
 
 Output will contain time taken for each sorting algorithm.
