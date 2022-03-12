@@ -4,6 +4,8 @@
 #include <vector>
 #include <fstream>
 #include <stdlib.h> //rand()
+#include <math.h> //log()
+#include <algorithm> //make_heap
 
 using namespace std;
 

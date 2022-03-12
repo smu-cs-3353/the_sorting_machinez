@@ -35,6 +35,7 @@ void Timsort::timsorter()
 
     while (sub_size < size)
     {
+        cout << "HERE" << endl;
         for (int i = 0; i < size; i += 2 * sub_size)
         {
 

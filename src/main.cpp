@@ -3,6 +3,7 @@
 #include "Merge.h"
 #include "Shellsort.h"
 #include "Timsort.h"
+#include "Introsort.h"
 
 // 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
 
@@ -23,8 +24,11 @@ int main(int argc, char **argv)
 	Sort *shellsorter = new Shellsort(file);
 	delete shellsorter;
 
-	Sort *timsorter = new Timsort(file);
-	delete timsorter;
+	// Sort *timsorter = new Timsort(file);
+	// delete timsorter;
+
+	Sort *introsorter = new Introsort(file);
+	delete introsorter;
 
 	return 0;
 }

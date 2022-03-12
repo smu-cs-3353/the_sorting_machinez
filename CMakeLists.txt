@@ -4,6 +4,7 @@ project(the_sorting_machinez)
 add_executable(the_sorting_machinez src/main.cpp src/Sort.h 
     src/Quicksort.h src/Quicksort.cpp src/Insertion.cpp src/Insertion.h
     src/Merge.h src/Merge.cpp src/Shellsort.h src/Shellsort.cpp
-    src/Timsort.h src/Timsort.cpp)
+    src/Timsort.h src/Timsort.cpp
+    src/Introsort.h src/Introsort.cpp)
 
 
