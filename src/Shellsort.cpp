@@ -3,15 +3,9 @@
 
 Shellsort::Shellsort(string directory) : Sort(directory)
 {
-    cout << "-----shellsort!-----" << endl;
-    for (int s : input_vector) // test print
-        cout << s << endl;
 
     shellsorter();
 
-    cout << "-----shellsort done-----" << endl;
-    for (int s : input_vector) // test print
-        cout << s << endl;
 }
 
 void Shellsort::shellsorter()

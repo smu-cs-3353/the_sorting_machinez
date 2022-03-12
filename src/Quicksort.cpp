@@ -2,18 +2,11 @@
 
 Quicksort::Quicksort(string directory) : Sort(directory)
 {
-    cout << "-----quicksort!-----" << endl;
-    for (int s : input_vector) //test print
-        cout << s << endl;
 
     int left = 0;
     int right = input_vector.size() - 1;
 
     quicksorter(left, right);
-
-    cout << "-----quicksort done-----" << endl;
-    for (int s : input_vector)  //test print
-        cout << s << endl;
 }
 
 /*

@@ -5,15 +5,7 @@ file input to input_vector done in base class 'Sort'
 */
 Timsort::Timsort(string directory) : Sort(directory)
 {
-    cout << "-----timsort!-----" << endl;
-    for (int s : input_vector) // test print
-        cout << s << endl;
-
     timsorter();
-
-    cout << "-----timsort done-----" << endl;
-    for (int s : input_vector) // test print
-        cout << s << endl;
 }
 
 /*
@@ -29,7 +21,7 @@ void Timsort::timsorter()
     for (int i = 0; i < size; i += sub_size)
     {
         int left = i;
-        int right = i + sub_size;
+        int right = i + sub_size - 1;
         insertion(left, right);
     }
 
@@ -40,9 +32,10 @@ void Timsort::timsorter()
         {
 
             int left = i;
-            int right = i + sub_size;
+            int right = i + sub_size - 1;
             int middle = left + (right - left) / 2;
             merge(left, middle, right);
+            cout << "sec" << endl;
         }
         sub_size *= 2;
     }

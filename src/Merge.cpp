@@ -2,17 +2,10 @@
 
 Merge::Merge(string directory) : Sort(directory)
 {
-    cout << "-----merger!-----" << endl;
-    for (int s : input_vector) // test print
-        cout << s << endl;
 
     int left = 0;
     int right = input_vector.size() - 1;
     merger(left, right);
-
-    cout << "-----merge done-----" << endl;
-    for (int s : input_vector) // test print
-        cout << s << endl;
 }
 
 /*
@@ -53,7 +46,7 @@ void Merge::merge(int left, int middle, int right)
 
     // a is count for arr_a, b for arr_b, result for input_vector
     int a = 0, b = 0, result = left;
-    
+
     while (a < a_length && b < b_length)
     {
         if (arr_a[a] <= arr_b[b])
