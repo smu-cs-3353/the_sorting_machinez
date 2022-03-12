@@ -2,20 +2,20 @@
 
 ## Project Statement
 Implement six sorting algorithms, and generate data to test its performance. The sorting algorithms are as follows:
--insertion sort
--randomized quicksort
--merge sort
--shellsort
--introsort
--timsort
+- insertion sort
+- randomized quicksort
+- merge sort
+- shellsort
+- introsort
+- timsort
 
 ## Data
 I generated five categories of data, and each category is done in six dataset sizes. The categories are as follows:
--randomized dataset without duplicates
--dataset without duplicates in ascending order
--dataset without duplicates, 60% data is in ascending order
--randomized dataset with 20% duplicates
--randomized dataset with 40% duplicates
+- randomized dataset without duplicates
+- dataset without duplicates in ascending order
+- dataset without duplicates, 60% data is in ascending order
+- randomized dataset with 20% duplicates
+- randomized dataset with 40% duplicates
 
 For datasets without duplicates, a random number generator was used to create a set, and the numbers varied between one and a million. datasets were created in ascending order by using the sort() function. Datasets that were partly sorted were created by appending a sorted sublist to an unsorted sublist. Randomized datasets with a percentage of duplicates were created by forming a list of duplicates, then joining that list to a set of nonduplicates(by casting set to list), then performing the shuffle() operation for randomized order.
 
